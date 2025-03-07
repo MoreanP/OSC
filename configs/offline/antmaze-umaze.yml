@@ -1,0 +1,15 @@
+env: antmaze-umaze-v2
+behavior_model_path: ./model/diffusion_trained_models/antmaze-umaze-v2/actor.pth
+dataset_dir: ./d4rl/datasets/ant_maze_v2/Ant_maze_u-maze_noisy_multistart_False_multigoal_False_sparse_fixed.hdf5
+lambd: 0.4
+osc_alpha: 10.0
+osc_epsilon: 0.6
+max_timesteps: 2000000
+actor_lr: 0.0001
+actor_dropout: 0.0
+actor_init_w: 0.001
+critic_init_w: 0.003
+antmaze_no_normalize: true
+eval_episodes: 100
+eval_freq: 50000
+work_dir: train_offline

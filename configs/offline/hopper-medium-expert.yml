@@ -1,0 +1,8 @@
+env: hopper-medium-expert-v2
+behavior_model_path: ./model/diffusion_trained_models/hopper-medium-expert-v2/actor.pth
+work_dir: train_offline
+dataset_dir: ./d4rl/datasets/gym_mujoco_v2/hopper_medium_expert-v2.hdf5
+lambd: 0.6
+osc_alpha: 5.0
+osc_epsilon: 0.4
+max_timesteps: 3000000

@@ -1,0 +1,8 @@
+env: halfcheetah-medium-v2
+behavior_model_path: ./model/diffusion_trained_models/halfcheetah-medium-v2/actor.pth
+work_dir: train_offline
+dataset_dir: ./d4rl/datasets/gym_mujoco_v2/halfcheetah_medium-v2.hdf5
+lambd: 0.05
+osc_alpha: 10.0
+osc_epsilon: 0.9
+max_timesteps: 2000000

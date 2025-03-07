@@ -1,0 +1,16 @@
+env: antmaze-umaze-diverse-v2
+behavior_model_path: ./model/diffusion_trained_models/antmaze-umaze-diverse-v2/actor.pth
+dataset_dir: ./d4rl/datasets/ant_maze_v2/Ant_maze_u-maze_noisy_multistart_True_multigoal_True_sparse_fixed.hdf5
+pretrain_model: ./models/offline_trained_models/antmaze-umaze-diverse-v2
+pretrain_step: 2000000
+lambd: 0.70
+osc_alpha: 10.0
+osc_epsilon: 0.7
+lambd_end: 0.2
+lambd_cool: true
+actor_lr: 0.0001
+actor_dropout: 0.0
+antmaze_no_normalize: true
+eval_episodes: 100
+eval_freq: 50000
+work_dir: train_finetune
