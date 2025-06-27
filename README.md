@@ -19,15 +19,6 @@ Run the following command to train diffusion.
 ```
 python train_diffusion.py --exp diffusionbc --algo bc --device 0 --env_name walker2d-medium-v2 --dir ./output/train_diffusion --dataset_dir ./d4rl/datasets/gym_mujoco_v2/walker2d_medium-v2.hdf5 --save_best_model
 ```
-#### Logging
-
-This codebase uses viskit(https://github.com/vitchyr/viskit)
- You can view saved runs with:
-
-```
-python ./viskit/viskit/frontend.py <run_dir>
-```
-
 
 ### Offline RL
 Run the following command to train offline RL on D4RL with pretrained diffusion models.
